@@ -1,0 +1,35 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+
+    cyberbot_controller:
+      type: cyberbot_controller/CyberbotController
+      joints:
+        - joint_left_front
+        - joint_left_rear
+        - joint_right_front
+        - joint_right_rear
+
+    diff_drive_controller:
+      type: diff_drive_controller/DiffDriveController
+
+
+cyberbot_controller:
+  ros__parameters:
+    height: 200.00
+
+diff_drive_controller:
+  ros__parameters:
+    left_wheel_names: ["wheel_left"]
+    right_wheel_names: ["wheel_right"]
+
+    wheel_separation: 80.0
+    wheel_radius: 10.0
+    left_wheel_radius_multiplier: -1.0
+    right_wheel_radius_multiplier: 1.0
+
+    publish_rate: 50.0
+    base_frame_id: "base_link"
+
+    #use_stamped_vel: false
+    enable_odom_tf: false

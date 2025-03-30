@@ -1,0 +1,25 @@
+{
+    "documentId": "7e9c507bcee485da64990cd9",
+    "outputFormat": "sdf",
+    "packageName": "cyberbot_description/sdf",
+    "robotName": "cyberbot",
+    "assemblyName": "robot",
+    "workspace_id": "eabac2199dede4982074148e",
+    "additional_xml": "cyberbot_control.xml",
+    "joint_properties": {
+        "default": {
+            "max_effort": 10.0,
+            "max_velocity": 6.0,
+            "friction": 0.5
+        },
+        "wheel_left": {
+            "type": "revolute"
+        },
+        "wheel_right": {
+            "type": "revolute"
+        }
+    },
+    "post_import_commands": [
+        "sed -i '/<link name=\"base\">/r sdf/sensors.xml' sdf/robot.sdf"
+    ]
+}

@@ -1,0 +1,17 @@
+<package format="3">
+  <name>cyberbot_controller</name>
+  <version>0.1.0</version>
+  <description>Custom ROS2 controller for Cyberbot</description>
+  <maintainer email="johannes.fischer@fischejo.de">Johannes Fischer</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>controller_interface</depend>
+  <depend>hardware_interface</depend>
+  <depend>pluginlib</depend>
+  <depend>lifecycle_msgs</depend>
+
+  <export>    
+    <build_type>ament_cmake</build_type>
+  </export>  
+</package>
